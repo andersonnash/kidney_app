@@ -12,17 +12,17 @@ This app will help educate and spread awareness about chronic kidey disease, dia
 
 ## Wireframes
 
-![Kidney App - Window](https://user-images.githubusercontent.com/82549011/125465832-4f28fb1e-2ca4-4371-9b35-585a3f1c3a24.png)
-![Kidney App - Window (3)](https://user-images.githubusercontent.com/82549011/125465805-5de2b4ee-f35f-4c7c-8483-72cdf4c9fbd6.png)
-![Kidney App - Window (2)](https://user-images.githubusercontent.com/82549011/125465816-efe0a1eb-0dd7-450f-bd21-159497b99ec3.png)
-![Kidney App - Window (1)](https://user-images.githubusercontent.com/82549011/125465819-1d098058-fdfd-4956-9a56-c3b27c8b1ebb.png)
-![Kidney App - Phone X](https://user-images.githubusercontent.com/82549011/125465826-17f110ea-77a7-444a-b28a-57f312ca28c8.png)
+![Kidney App - Window (3)](https://user-images.githubusercontent.com/82549011/125471638-5447330f-5301-4fe6-9e50-229106ca42bd.png)
+![Kidney App - Window](https://user-images.githubusercontent.com/82549011/125471644-04e536de-4bc3-4bc4-b023-091f6af03468.png)
+![Kidney App - Phone X](https://user-images.githubusercontent.com/82549011/125471647-53bd9f02-477f-47da-8675-e83920ed5387.png)
+![Kidney App - Window (1)](https://user-images.githubusercontent.com/82549011/125471653-2ee3de8e-06a7-4046-a0de-d0573697f98a.png)
+![Kidney App - Window (2)](https://user-images.githubusercontent.com/82549011/125471660-28a13978-21aa-49d0-97b8-aefafc2b1362.png)
+
 
 
 ## Component Hierarchy
 
-![image](https://user-images.githubusercontent.com/82549011/125455846-6ded8daa-4f5b-486b-975f-4e7e93e9beff.png)
-
+![image](https://user-images.githubusercontent.com/82549011/125471854-3e93d386-1322-42c7-89dd-d187b913a910.png)
 
 ## API and Data Sample
 
@@ -52,11 +52,12 @@ EXAMPLE RESPONSE
 -Fully function forum/disussion board
 -Link to Airtable API to display forum discussion
 -Functional submit/post button
+-Media Queries
 
 #### PostMVP  
 
 -Integrate a second API to display more relevant information about kidney disease
--Advnaced CSS
+-Tailwind
 
 ## Project Schedule
 
@@ -70,7 +71,12 @@ This schedule will be used to keep track of your progress throughout the week an
 |July 14| Pseudocode / actual code | Incomplete
 |July 15| Initial Clickable Model  | Incomplete
 |July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|July 17| Tailwind| Incomplete
+|July 18| Media Queries | Incomplete
+|July 19|  | Incomplete
+|July 20| Presentations | Incomplete
+
+
 
 ## Timeframes
 
