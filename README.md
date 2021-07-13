@@ -12,11 +12,11 @@ This app will help educate and spread awareness about chronic kidey disease, dia
 
 ## Wireframes
 
+![Kidney App - Window](https://user-images.githubusercontent.com/82549011/125465832-4f28fb1e-2ca4-4371-9b35-585a3f1c3a24.png)
 ![Kidney App - Window (3)](https://user-images.githubusercontent.com/82549011/125465805-5de2b4ee-f35f-4c7c-8483-72cdf4c9fbd6.png)
 ![Kidney App - Window (2)](https://user-images.githubusercontent.com/82549011/125465816-efe0a1eb-0dd7-450f-bd21-159497b99ec3.png)
 ![Kidney App - Window (1)](https://user-images.githubusercontent.com/82549011/125465819-1d098058-fdfd-4956-9a56-c3b27c8b1ebb.png)
 ![Kidney App - Phone X](https://user-images.githubusercontent.com/82549011/125465826-17f110ea-77a7-444a-b28a-57f312ca28c8.png)
-![Kidney App - Window](https://user-images.githubusercontent.com/82549011/125465832-4f28fb1e-2ca4-4371-9b35-585a3f1c3a24.png)
 
 
 ## Component Hierarchy
@@ -47,7 +47,6 @@ EXAMPLE RESPONSE
 
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 -Homepage with clickable links to show respective inforamtion.
 -Fully function forum/disussion board
@@ -55,7 +54,6 @@ EXAMPLE RESPONSE
 -Functional submit/post button
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 -Integrate a second API to display more relevant information about kidney disease
 -Advnaced CSS
