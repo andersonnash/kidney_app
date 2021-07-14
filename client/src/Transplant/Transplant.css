@@ -1,0 +1,10 @@
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
