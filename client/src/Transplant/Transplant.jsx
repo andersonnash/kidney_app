@@ -5,10 +5,10 @@ import axios from "axios";
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
 
-const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/iga`;
+const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/transplant`;
 
-export default function Iga() {
-  const [getIga, setIga] = useState([]);
+export default function Transplant() {
+  const [getTransplantInfo, setTransplantInfo] = useState([]);
 
   useEffect(() => {
     const fetchIgaData = async () => {
@@ -16,17 +16,17 @@ export default function Iga() {
         headers: { Authorization: `Bearer ${AIRTABLE_KEY}` },
       });
       console.log(res);
-      setIga(res.data.records);
+      setTransplantInfo(res.data.records);
     };
     fetchIgaData();
   }, []);
 
   return (
     <div>
-      {getIga.map((info) => {
+      {getTransplantInfo.map((info) => {
         return (
           <div>
-            <h2>{info.fields.question}</h2>
+            <h2>{info.fields.questions}</h2>
             <p>{info.fields.explanation}</p>
           </div>
         );

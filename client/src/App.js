@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Iga from "./components/Iga";
 import Forum from "./components/Forum";
-import Transplant from "./components/Transplant";
+import Transplant from "./Transplant/Transplant";
 import Homepage from "./components/Homepage";
 
 function App() {
