@@ -5,7 +5,7 @@ import axios from "axios";
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
 
-const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/iga/rechvnhSuwGqo91h1`;
+const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/iga/rectXEgyewN9T8MbM`;
 
 export default function Iga() {
   const [getIga, setIga] = useState({});
@@ -25,7 +25,8 @@ export default function Iga() {
     <div>
       <h1>Living with IgA</h1>
       <section>
-        <h2>{getIga.causes}</h2>
+        <h2>{getIga.question}</h2>
+        <p>{getIga.explanation}</p>
       </section>
     </div>
   );
