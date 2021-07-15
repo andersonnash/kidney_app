@@ -1,6 +1,8 @@
 import "./App.css";
 import "./Transplant.css";
-import "./Homepage.css";
+import "./Homepage2.css";
+import "./Iga.css";
+import "./Navbar.css";
 import { Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -31,9 +33,6 @@ function App() {
       <Route path="/Forum">
         <Forum toggle={toggle} setToggle={setToggle} />
       </Route>
-      {/* <Route>
-        <Cards />
-      </Route> */}
       {/* Footer */}
       <Footer />
     </div>

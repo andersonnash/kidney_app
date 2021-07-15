@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
+import { Route } from "react-router-dom";
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
@@ -22,7 +24,10 @@ export default function Iga() {
   }, []);
 
   return (
-    <div>
+    <div className="igaInfoContainer">
+      <Route path="/transplant">
+        <Navbar />
+      </Route>
       {getIga.map((info) => {
         return (
           <div>

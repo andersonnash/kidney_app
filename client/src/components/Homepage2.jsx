@@ -23,58 +23,86 @@ export default function Homepage2() {
 
   return (
     <div>
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="https://www.kidney.org/sites/default/files/styles/nephron_custom_scale_crop_300_225/public/transplant_friends.jpg"
-            title="Transplant"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Transplant
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              When you get a kidney transplant, a healthy kidney is placed
-              inside your body to do the work your own kidneys can no longer do.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            <Link to="/Transplant"> Learn More</Link>
-          </Button>
-        </CardActions>
-      </Card>
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="https://www.codlearningtech.org/wp-content/uploads/2020/07/discussionboard-1.png"
-            title="Transplant"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Forum
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          {/* <Button size="small" color="primary">
+      <div className="cardContainer">
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://www.kidney.org/sites/default/files/styles/nephron_custom_scale_crop_300_225/public/transplant_friends.jpg"
+              title="Transplant"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Transplant
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                When you get a kidney transplant, a healthy kidney is placed
+                inside your body to do the work your own kidneys can no longer
+                do.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Share
+            </Button>
+            <Button size="small" color="primary">
+              <Link to="/Transplant"> Learn More</Link>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://www.codlearningtech.org/wp-content/uploads/2020/07/discussionboard-1.png"
+              title="Transplant"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Forum
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Share your story with the community
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            {/* <Button size="small" color="primary">
             Share
           </Button> */}
-          <Button size="small" color="primary">
-            <Link to="/Forum"> Share Your Story</Link>
-          </Button>
-        </CardActions>
-      </Card>
+            <Button size="small" color="primary">
+              <Link to="/Forum"> Share Your Story</Link>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="http://cdn.shopify.com/s/files/1/0379/5923/7764/files/body-fail-kidney-man-organs-people-sad-7EtK4d-clipart_large.jpeg?v=1595044917"
+              title="Transplant"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Living with IgA
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                IgA nephropathy is a chronic kidney disease. It progresses over
+                10 to 20 years, and it can lead to end-stage renal disease.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            {/* <Button size="small" color="primary">
+            Share
+          </Button> */}
+            <Button size="small" color="primary">
+              <Link to="/iga">Learn More</Link>
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
     </div>
   );
 }
