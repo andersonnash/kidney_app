@@ -9,8 +9,10 @@ import Forum from "./components/Forum";
 import Transplant from "./Transplant/Transplant";
 import Homepage from "./components/Homepage";
 import Cards from "./components/MediaCard";
+import { useState } from "react";
 
 function App() {
+  const [toggleFetch, setToggleFetch] = useState(false);
   return (
     <div className="App">
       {/* Navbar */}

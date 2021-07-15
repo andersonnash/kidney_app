@@ -16,33 +16,76 @@ const defaultForm = {
 export default function Forum() {
   const [getForum, setForum] = useState([]);
   const [input, setInput] = useState(defaultForm);
+  const [getForumData, setForumData] = useState([]);
+
+  useEffect(() => {
+    const getForumData = async () => {
+      const res = await axios.get(URL, {
+        headers: { Authorization: `Bearer ${AIRTABLE_KEY}` },
+      });
+      console.log(res);
+      setForumData(res.data.records);
+    };
+    getForumData();
+  }, [toggleFetch]);
+
+  // create useeffect that does an axios.get request for the forum data. dependecy array will need toggleFetch as a dependency
+  // in the parent component/app.js create a usestate for togglefetcha nd settogglefetch initialize to false pass down togglefeth and settogglefetch to forum
+  //in the handle submit after the succefsul post set togglefetch to the opposite to what it was
+  // make usestae for all form data
+  //. in the return map through forum data for each post render
+
+  // useEffect(() => {}, []);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setInput((prevInput) => ({
+      ...prevInput,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  };
-
-  useEffect(() => {
+    console.log("handleSubmit");
     const fetchForumData = async () => {
-      const res = await axios.post(URL, {
-        headers: { Authorization: `Bearer ${AIRTABLE_KEY}` },
-      });
+      const res = await axios.post(
+        URL,
+        { fields: input },
+        {
+          headers: { Authorization: `Bearer ${AIRTABLE_KEY}` },
+        }
+      );
       console.log(res);
       setForum(res);
     };
     fetchForumData();
-  }, []);
+  };
   return (
-    <form>
-      <input type="name" placeholder="Name" />
+    <form onSubmit={handleSubmit}>
+      <input
+        type="name"
+        name="name"
+        placeholder="Name"
+        value={input.name}
+        onChange={handleChange}
+      />
       <input
         type="email"
+        name="emailAddress"
+        value={input.emailAddress}
         // value={input.emailAddress}
         placeholder="Email Address"
+        onChange={handleChange}
       />
-      <textarea rows="4" cols="20" />
-      <button onSubmit={handleSubmit} type="submit">
-        Submit
-      </button>
+      <textarea
+        rows="4"
+        cols="20"
+        name="comments"
+        value={input.comments}
+        onChange={handleChange}
+      />
+      <button type="submit">Submit</button>
     </form>
   );
 }
