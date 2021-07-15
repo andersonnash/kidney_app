@@ -13,13 +13,17 @@ const defaultForm = {
   comments: "",
 };
 
-export default function Forum() {
+export default function Forum(props) {
   const [getForum, setForum] = useState([]);
   const [input, setInput] = useState(defaultForm);
   const [getForumData, setForumData] = useState([]);
+  const [name, setName] = useState({});
+  const [email, setEmail] = useState({});
+  const [comments, setComments] = useState({});
 
   useEffect(() => {
     const getForumData = async () => {
+      // setToggle((prevToggle) => !prevToggle);
       const res = await axios.get(URL, {
         headers: { Authorization: `Bearer ${AIRTABLE_KEY}` },
       });
@@ -27,7 +31,7 @@ export default function Forum() {
       setForumData(res.data.records);
     };
     getForumData();
-  }, [toggleFetch]);
+  }, [props.toggle]);
 
   // create useeffect that does an axios.get request for the forum data. dependecy array will need toggleFetch as a dependency
   // in the parent component/app.js create a usestate for togglefetcha nd settogglefetch initialize to false pass down togglefeth and settogglefetch to forum
@@ -47,6 +51,7 @@ export default function Forum() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     console.log("handleSubmit");
     const fetchForumData = async () => {
       const res = await axios.post(
@@ -60,32 +65,44 @@ export default function Forum() {
       setForum(res);
     };
     fetchForumData();
+    props.setToggle((prevToggle) => !prevToggle);
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="name"
-        name="name"
-        placeholder="Name"
-        value={input.name}
-        onChange={handleChange}
-      />
-      <input
-        type="email"
-        name="emailAddress"
-        value={input.emailAddress}
-        // value={input.emailAddress}
-        placeholder="Email Address"
-        onChange={handleChange}
-      />
-      <textarea
-        rows="4"
-        cols="20"
-        name="comments"
-        value={input.comments}
-        onChange={handleChange}
-      />
-      <button type="submit">Submit</button>
-    </form>
+    <div>
+      {getForumData.map((info) => {
+        return (
+          <div>
+            <h2>{info.fields.name}</h2>
+            <p>{info.fields.emailAddress}</p>
+            <p>{info.fields.comments}</p>
+          </div>
+        );
+      })}
+      <form onSubmit={handleSubmit}>
+        <input
+          type="name"
+          name="name"
+          placeholder="Name"
+          value={input.name}
+          onChange={handleChange}
+        />
+        <input
+          type="email"
+          name="emailAddress"
+          value={input.emailAddress}
+          // value={input.emailAddress}
+          placeholder="Email Address"
+          onChange={handleChange}
+        />
+        <textarea
+          rows="4"
+          cols="20"
+          name="comments"
+          value={input.comments}
+          onChange={handleChange}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }

@@ -12,7 +12,8 @@ import Cards from "./components/MediaCard";
 import { useState } from "react";
 
 function App() {
-  const [toggleFetch, setToggleFetch] = useState(false);
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div className="App">
       {/* Navbar */}
@@ -27,7 +28,7 @@ function App() {
         <Iga />
       </Route>
       <Route path="/Forum">
-        <Forum />
+        <Forum toggle={toggle} setToggle={setToggle} />
       </Route>
       {/* <Route>
         <Cards />
