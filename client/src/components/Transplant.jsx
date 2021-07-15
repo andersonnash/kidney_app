@@ -22,7 +22,7 @@ export default function Transplant() {
   }, []);
 
   return (
-    <div>
+    <div className="TransplantContainer">
       {getTransplantInfo.map((info) => {
         return (
           <div>

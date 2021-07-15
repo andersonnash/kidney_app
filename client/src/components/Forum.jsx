@@ -69,15 +69,6 @@ export default function Forum(props) {
   };
   return (
     <div>
-      {getForumData.map((info) => {
-        return (
-          <div>
-            <h2>{info.fields.name}</h2>
-            <p>{info.fields.emailAddress}</p>
-            <p>{info.fields.comments}</p>
-          </div>
-        );
-      })}
       <form onSubmit={handleSubmit}>
         <input
           type="name"
@@ -102,6 +93,16 @@ export default function Forum(props) {
           onChange={handleChange}
         />
         <button type="submit">Submit</button>
+
+        {getForumData.map((info) => {
+          return (
+            <div>
+              <h2>{info.fields.name}</h2>
+              <p>{info.fields.emailAddress}</p>
+              <p>{info.fields.comments}</p>
+            </div>
+          );
+        })}
       </form>
     </div>
   );

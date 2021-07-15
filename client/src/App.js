@@ -1,14 +1,14 @@
 import "./App.css";
-import "./Transplant/Transplant.css";
+import "./Transplant.css";
 import "./Homepage.css";
 import { Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Iga from "./components/Iga";
 import Forum from "./components/Forum";
-import Transplant from "./Transplant/Transplant";
-import Homepage from "./components/Homepage";
-import Cards from "./components/MediaCard";
+import Transplant from "./components/Transplant";
+// import Homepage from "./components/Homepage";
+import Homepage2 from "./components/Homepage2";
 import { useState } from "react";
 
 function App() {
@@ -19,7 +19,8 @@ function App() {
       {/* Navbar */}
       <Navbar />
       <Route exact path="/">
-        <Homepage />
+        {/* <Homepage /> */}
+        <Homepage2 />
       </Route>
       <Route path="/Transplant">
         <Transplant />
