@@ -8,6 +8,7 @@ import Iga from "./components/Iga";
 import Forum from "./components/Forum";
 import Transplant from "./Transplant/Transplant";
 import Homepage from "./components/Homepage";
+import Cards from "./components/MediaCard";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       <Route path="/Forum">
         <Forum />
       </Route>
+      {/* <Route>
+        <Cards />
+      </Route> */}
       {/* Footer */}
       <Footer />
     </div>
