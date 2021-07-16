@@ -3,12 +3,15 @@ import "./Transplant.css";
 import "./Homepage2.css";
 import "./Iga.css";
 import "./Navbar.css";
+import "./Forum.css";
+import "./Header.css";
 import { Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Iga from "./components/Iga";
 import Forum from "./components/Forum";
 import Transplant from "./components/Transplant";
+import Header from "./components/Header";
 // import Homepage from "./components/Homepage";
 import Homepage2 from "./components/Homepage2";
 import { useState } from "react";
@@ -18,19 +21,21 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       {/* Navbar */}
+
       <Navbar />
       <Route exact path="/">
         {/* <Homepage /> */}
         <Homepage2 />
       </Route>
-      <Route path="/Transplant">
+      <Route path="/transplant">
         <Transplant />
       </Route>
-      <Route path="/Iga">
+      <Route path="/iga">
         <Iga />
       </Route>
-      <Route path="/Forum">
+      <Route path="/forum">
         <Forum toggle={toggle} setToggle={setToggle} />
       </Route>
       {/* Footer */}

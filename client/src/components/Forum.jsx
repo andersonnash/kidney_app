@@ -17,9 +17,9 @@ export default function Forum(props) {
   const [getForum, setForum] = useState([]);
   const [input, setInput] = useState(defaultForm);
   const [getForumData, setForumData] = useState([]);
-  const [name, setName] = useState({});
-  const [email, setEmail] = useState({});
-  const [comments, setComments] = useState({});
+  // const [name, setName] = useState({});
+  // const [email, setEmail] = useState({});
+  // const [comments, setComments] = useState({});
 
   useEffect(() => {
     const getForumData = async () => {
@@ -86,8 +86,8 @@ export default function Forum(props) {
           onChange={handleChange}
         />
         <textarea
-          rows="4"
-          cols="20"
+          rows="10"
+          cols="50"
           name="comments"
           value={input.comments}
           onChange={handleChange}
@@ -96,7 +96,7 @@ export default function Forum(props) {
 
         {getForumData.map((info) => {
           return (
-            <div>
+            <div className="forumInfo">
               <h2>{info.fields.name}</h2>
               <p>{info.fields.emailAddress}</p>
               <p>{info.fields.comments}</p>

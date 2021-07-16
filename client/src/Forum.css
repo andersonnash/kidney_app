@@ -1,0 +1,19 @@
+input,
+textarea,
+button {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.forumInfo {
+  border: solid black 2px;
+  border-radius: 25px;
+}

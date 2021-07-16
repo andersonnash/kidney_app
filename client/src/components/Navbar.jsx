@@ -1,18 +1,49 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React from "react";
+import Button from "@material-ui/core/Button";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 
 export default function Navbar() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
-    <div className="navbarLinks">
-      <Link to="/">
-        <h1>Kidney App</h1>
-      </Link>
-      <Link to="/transplant">
-        <h1>Transplant</h1>
-      </Link>
-      <Link to="/Forum">
-        <h1>Forum</h1>
-      </Link>
+    <div className="navbar">
+      <Button
+        aria-controls="simple-menu"
+        aria-haspopup="true"
+        onClick={handleClick}
+      >
+        Open Menu
+      </Button>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <Link to="/">
+          <MenuItem onClick={handleClose}>Homepage</MenuItem>
+        </Link>
+        <Link to="/forum">
+          <MenuItem onClick={handleClose}>Forum</MenuItem>
+        </Link>
+        <Link to="/transplant">
+          <MenuItem onClick={handleClose}>Transplant</MenuItem>
+        </Link>
+        <Link to="/iga">
+          <MenuItem onClick={handleClose}>Living with IgA</MenuItem>
+        </Link>
+      </Menu>
     </div>
   );
 }

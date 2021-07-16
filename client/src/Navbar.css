@@ -1,13 +1,23 @@
-.navbarLinks {
+/* .navbarLinks {
   display: grid;
   grid-template-columns: 1fr repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  /* margin-left: 150px; */
   max-width: 900px;
   margin: auto;
   background: white;
   padding: 10px;
   text-align: center;
+} */
+
+.navbar {
+  float: right;
+  transition: none;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  overflow: hidden;
 }
