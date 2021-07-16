@@ -30,6 +30,7 @@ Link {
 .topnav {
   overflow: hidden;
   background-color: rgb(82, 148, 198);
+  height: 10vh;
 }
 
 button {
@@ -37,7 +38,7 @@ button {
   padding: 10px;
   background-color: transparent;
   border-style: none;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 button:hover {
