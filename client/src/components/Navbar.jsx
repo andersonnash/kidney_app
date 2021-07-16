@@ -19,10 +19,18 @@ export default function Navbar() {
 
   return (
     <div className="topnav">
-      <Link to="/">Homepage</Link>
-      <Link to="/transplant">Transplant</Link>
-      <Link to="/forum">Forum</Link>
-      <Link to="/iga">Living with Iga</Link>
+      <button>
+        <Link to="/">Homepage</Link>
+      </button>
+      <button>
+        <Link to="/transplant">Transplant</Link>
+      </button>
+      <button>
+        <Link to="/forum">Forum</Link>
+      </button>
+      <button>
+        <Link to="/iga">Living with Iga</Link>
+      </button>
     </div>
 
     // <div className="navbar">

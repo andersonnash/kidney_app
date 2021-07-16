@@ -2,9 +2,9 @@ textarea {
   resize: none;
 }
 
-body {
+/* body {
   background-color: #dddfd4;
-}
+} */
 
 @media only screen and (max-width: 375px) {
   .cardContainer {
