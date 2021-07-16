@@ -35,8 +35,7 @@ export default function Homepage2() {
               Transplant
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              When you get a kidney transplant, a healthy kidney is placed
-              inside your body to do the work your own kidneys can no longer do.
+              When you get a kidney transplant
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -86,8 +85,7 @@ export default function Homepage2() {
               Living with IgA
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              IgA nephropathy is a chronic kidney disease. It progresses over 10
-              to 20 years, and it can lead to end-stage renal disease.
+              IgA nephropathy is a chronic kidney disease.
             </Typography>
           </CardContent>
         </CardActionArea>

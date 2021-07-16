@@ -1,5 +1,6 @@
 import "./App.css";
 import "./Transplant.css";
+import "./Homepage.css";
 import "./Homepage2.css";
 import "./Iga.css";
 import "./Navbar.css";
@@ -14,6 +15,7 @@ import Transplant from "./components/Transplant";
 import Header from "./components/Header";
 // import Homepage from "./components/Homepage";
 import Homepage2 from "./components/Homepage2";
+
 import { useState } from "react";
 
 function App() {
@@ -21,11 +23,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      {/* Navbar */}
-
       <Navbar />
+      <Header />
+
       <Route exact path="/">
+        {/* <Homepage /> */}
         {/* <Homepage /> */}
         <Homepage2 />
       </Route>

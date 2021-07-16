@@ -31,7 +31,7 @@ export default function Forum(props) {
       setForumData(res.data.records);
     };
     getForumData();
-  }, [props.toggle]);
+  }, [props.toggle, getForum]);
 
   // create useeffect that does an axios.get request for the forum data. dependecy array will need toggleFetch as a dependency
   // in the parent component/app.js create a usestate for togglefetcha nd settogglefetch initialize to false pass down togglefeth and settogglefetch to forum

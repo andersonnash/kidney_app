@@ -2,6 +2,7 @@ input,
 textarea,
 button {
   display: grid;
+  justify-content: center;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 0px;
