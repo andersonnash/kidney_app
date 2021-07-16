@@ -36,3 +36,10 @@
   padding: 14px 14px;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 375px) {
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -20,11 +20,8 @@ export default function Navbar() {
   return (
     <div className="topnav">
       <Link to="/">Homepage</Link>
-
       <Link to="/transplant">Transplant</Link>
-
       <Link to="/forum">Forum</Link>
-
       <Link to="/iga">Living with Iga</Link>
     </div>
 
