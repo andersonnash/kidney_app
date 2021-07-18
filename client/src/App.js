@@ -1,6 +1,6 @@
 import "./App.css";
 import "./Transplant.css";
-import "./Homepage.css";
+import "./Intro.css";
 import "./Homepage2.css";
 import "./Iga.css";
 import "./Navbar.css";
@@ -13,7 +13,7 @@ import Iga from "./components/Iga";
 import Forum from "./components/Forum";
 import Transplant from "./components/Transplant";
 import Header from "./components/Header";
-// import Homepage from "./components/Homepage";
+import Intro from "./components/Intro";
 import Homepage2 from "./components/Homepage2";
 
 import { useState } from "react";
@@ -25,9 +25,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
+      <Intro />
+
       <Route exact path="/">
-        {/* <Homepage /> */}
-        {/* <Homepage /> */}
         <Homepage2 />
       </Route>
       <Route path="/transplant">

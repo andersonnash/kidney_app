@@ -3,6 +3,7 @@
 p {
   font-family: "PT Serif", serif;
   word-spacing: 7px;
+  text-align: center;
 }
 
 h2 {
@@ -16,6 +17,10 @@ h2:hover {
 
 textarea {
   resize: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* body {
