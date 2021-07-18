@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    minWidth: 300,
+    minWidth: 345,
   },
   media: {
     height: 140,
@@ -78,7 +78,7 @@ export default function Homepage2() {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image="http://cdn.shopify.com/s/files/1/0379/5923/7764/files/body-fail-kidney-man-organs-people-sad-7EtK4d-clipart_large.jpeg?v=1595044917"
+            image="https://www.kidney.org/sites/default/files/styles/nephron_custom_scale_crop_300_225/public/things_to_consider.jpg"
             title="Transplant"
           />
           <CardContent>

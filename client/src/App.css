@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@100&display=swap");
+
+p {
+  font-family: "PT Serif", serif;
+  word-spacing: 7px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h2:hover {
+  color: gray;
+}
+
 textarea {
   resize: none;
 }

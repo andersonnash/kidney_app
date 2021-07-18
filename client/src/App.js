@@ -25,7 +25,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-
       <Route exact path="/">
         {/* <Homepage /> */}
         {/* <Homepage /> */}

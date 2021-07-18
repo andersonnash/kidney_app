@@ -13,7 +13,42 @@ textarea {
   grid-area: 1 / 1 / 2 / 2;
 }
 
+.nameClass,
+.emailClass,
+.textareaClass {
+  width: 25%;
+  border-radius: 4px;
+}
+
+.forumClass {
+  display: flex;
+  justify-content: center;
+}
+
 .forumInfo {
-  border: solid black 2px;
+  border: solid lightgray 2px;
   border-radius: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  /* content: center; */
+  width: 50%;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+.formButton {
+  /* padding: 30px; */
+  text-align: center;
+  font-size: 15px;
+  border-style: solid;
+  width: 15%;
+  border-radius: 4px;
+}
+
+.formButton:hover {
+  color: gray;
 }

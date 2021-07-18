@@ -71,6 +71,7 @@ export default function Forum(props) {
     <div>
       <form onSubmit={handleSubmit}>
         <input
+          className="nameClass"
           type="name"
           name="name"
           placeholder="Name"
@@ -78,6 +79,7 @@ export default function Forum(props) {
           onChange={handleChange}
         />
         <input
+          className="emailClass"
           type="email"
           name="emailAddress"
           value={input.emailAddress}
@@ -86,20 +88,27 @@ export default function Forum(props) {
           onChange={handleChange}
         />
         <textarea
+          className="textareaClass"
           rows="10"
           cols="50"
           name="comments"
           value={input.comments}
           onChange={handleChange}
         />
-        <button type="submit">Submit</button>
+        <div className="submitButton">
+          <button class="formButton" type="submit">
+            Submit
+          </button>
+        </div>
 
         {getForumData.map((info) => {
           return (
-            <div className="forumInfo">
-              <h2>{info.fields.name}</h2>
-              <p>{info.fields.emailAddress}</p>
-              <p>{info.fields.comments}</p>
+            <div className="forumClass">
+              <div className="forumInfo">
+                <h2>{info.fields.name}</h2>
+                <p>{info.fields.emailAddress}</p>
+                <p>{info.fields.comments}</p>
+              </div>
             </div>
           );
         })}
