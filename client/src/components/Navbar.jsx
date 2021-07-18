@@ -19,20 +19,23 @@ export default function Navbar() {
 
   return (
     <div className="topnav">
-      <h2 className="headingLogo">Forza Salute</h2>
-      <div className="menu">
-        <button>
-          <Link to="/">Homepage</Link>
-        </button>
-        <button>
-          <Link to="/transplant">Transplant</Link>
-        </button>
-        <button>
-          <Link to="/forum">Forum</Link>
-        </button>
-        <button>
-          <Link to="/iga">Living with Iga</Link>
-        </button>
+      <div className="logo">
+        <h2 className="headingLogo">Forza Salute</h2>
+
+        <div className="menu">
+          <button>
+            <Link to="/">Homepage</Link>
+          </button>
+          <button>
+            <Link to="/transplant">Transplant</Link>
+          </button>
+          <button>
+            <Link to="/forum">Forum</Link>
+          </button>
+          <button>
+            <Link to="/iga">Living with Iga</Link>
+          </button>
+        </div>
       </div>
     </div>
 

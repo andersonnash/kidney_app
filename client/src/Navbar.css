@@ -15,10 +15,11 @@ button {
 
 .menu {
   display: flex;
-  float: right;
-  padding-top: 15px;
+  /* float: right; */
+  justify-content: flex-end;
+  /* padding-top: 15px; */
 }
-
+/* 
 .headingLogo {
   display: flex;
   justify-content: baseline;
@@ -26,6 +27,12 @@ button {
   justify-self: start;
   margin: 0;
   height: 0;
+} */
+
+.logo {
+  display: flex;
+  justify-content: baseline;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 375px) {
