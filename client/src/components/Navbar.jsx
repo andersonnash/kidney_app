@@ -28,7 +28,7 @@ export default function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   });
-  const isMobile = window.innerWidth <= 700;
+  const isMobile = windowDimension <= 700;
 
   // const [anchorEl, setAnchorEl] = React.useState(null);
 
