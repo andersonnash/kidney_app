@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <Link to="/homepage">
+      <Link to="/">
         <h2 className="headingLogo">In Forma</h2>
       </Link>
       {isMobile ? (
