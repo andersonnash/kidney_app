@@ -18,7 +18,7 @@ export default function Navbar() {
       setWindowDimension(window.innerWidth);
       if (windowDimension <= 700) {
         setHamburger(true);
-        setVisible(true);
+        // setVisible(true);
       } else {
         setHamburger(false);
       }
