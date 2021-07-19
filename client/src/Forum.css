@@ -18,6 +18,7 @@ textarea {
 .textareaClass {
   width: 25%;
   border-radius: 4px;
+  margin-top: 5px;
 }
 
 .forumClass {
