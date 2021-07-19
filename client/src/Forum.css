@@ -52,3 +52,9 @@ textarea {
 .formButton:hover {
   color: gray;
 }
+
+@media only screen and(max-width: 375px) {
+  . {
+    display: flex;
+  }
+}
