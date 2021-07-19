@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import Button from "@material-ui/core/Button";
 import { useState, useEffect } from "react";
 
 // import Button from "@material-ui/core/Button";
@@ -42,45 +41,46 @@ export default function Navbar() {
 
   return (
     <nav>
-
       <h2 className="headingLogo">Forza Salute</h2>
       {isMobile ? (
         <div className="mobileClass">
-        <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
-        className="bars"
-        alt="hamburger"
-        onClick={() => setHamburger(!hamburger)}
-      />
-      <div
-        className="nav-items"
-        style={{ display: hamburger && visible ? "flex" : "none" }}
-      >
-        <a href="https://facebook.com/">Facebook</a>
-        <a href="https://twitter.com/">Twitter</a>
-        <a href="https://stackoverflow.com">Stack Overflow</a>
-          </div>
-          </div>
-      ) : (
-        <div className="topnav">
-        <div className="logo">
-          <div className="menu">
-            <button>
-              <Link to="/">Homepage</Link>
-            </button>
-            <button>
-              <Link to="/transplant">Transplant</Link>
-            </button>
-            <button>
-              <Link to="/forum">Forum</Link>
-            </button>
-            <button>
-              <Link to="/iga">Living with Iga</Link>
-            </button>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+            className="bars"
+            alt="hamburger"
+            onClick={() => setHamburger(!hamburger)}
+          />
+          <div
+            className="nav-items"
+            style={{ display: hamburger && visible ? "flex" : "none" }}
+          >
+            <a href="https://facebook.com/">Facebook</a>
+            <a href="https://twitter.com/">Twitter</a>
+            <a href="https://stackoverflow.com">Stack Overflow</a>
           </div>
         </div>
-      </div>
-      )
+      ) : (
+        <div className="desktopClass">
+          <div className="topnav">
+            <div className="logo">
+              <div className="menu">
+                <button>
+                  <Link to="/">Homepage</Link>
+                </button>
+                <button>
+                  <Link to="/transplant">Transplant</Link>
+                </button>
+                <button>
+                  <Link to="/forum">Forum</Link>
+                </button>
+                <button>
+                  <Link to="/iga">Living with Iga</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
 
     // <div className="navbar">
