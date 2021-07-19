@@ -50,12 +50,12 @@ export default function Navbar() {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
             className="bars"
             alt="hamburger"
-            onClick={() => setHamburger(!hamburger)}
+            onClick={handleClick}
           />
           <div
             className="nav-items"
             style={{ display: hamburger && visible ? "flex" : "none" }}
-            onClick={handleClick}
+            // onClick={handleClick}
           >
             <Link to="/transplant">Transplant</Link>
             <Link to="/homepage">Homepage</Link>
