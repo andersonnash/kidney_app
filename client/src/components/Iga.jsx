@@ -28,9 +28,9 @@ export default function Iga() {
       <Route path="/transplant">
         <Navbar />
       </Route>
-      {getIga.map((info) => {
+      {getIga.map((info, index) => {
         return (
-          <div>
+          <div key={index}>
             <h2>{info.fields.question}</h2>
             <p>{info.fields.explanation}</p>
           </div>

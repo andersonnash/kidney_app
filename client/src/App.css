@@ -31,4 +31,7 @@ a {
   .cardContainer {
     display: flex;
   }
+  .emailClass {
+    width: 75%;
+  }
 }

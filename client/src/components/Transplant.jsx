@@ -23,9 +23,9 @@ export default function Transplant() {
 
   return (
     <div className="TransplantContainer">
-      {getTransplantInfo.map((info) => {
+      {getTransplantInfo.map((info, index) => {
         return (
-          <div>
+          <div key={index}>
             <h2>{info.fields.questions}</h2>
             <p>{info.fields.explanation}</p>
           </div>

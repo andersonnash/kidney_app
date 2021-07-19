@@ -4,3 +4,17 @@
   padding-top: 75px;
   padding-right: 75px;
 }
+
+.footerImage {
+  height: 75px;
+  width: 75px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer {
+    padding: 0;
+  }
+  .footerImage {
+    margin-left: 20px;
+  }
+}

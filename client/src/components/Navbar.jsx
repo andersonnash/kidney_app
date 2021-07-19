@@ -7,18 +7,19 @@ import { useState, useEffect } from "react";
 // import MenuItem from "@material-ui/core/MenuItem";
 
 export default function Navbar() {
-  const [hamburger, setHamburger] = useState(true);
-  const [visible, setVisible] = useState(true);
+  const [hamburger, setHamburger] = useState(false);
+  const [visible, setVisible] = useState(false);
   const [windowDimension, setWindowDimension] = useState(null);
   useEffect(() => {
     setWindowDimension(window.innerWidth);
   }, []);
   useEffect(() => {
     const handleResize = (e) => {
-      if (window.innerWidth > 425) {
+      setWindowDimension(window.innerWidth);
+      if (windowDimension <= 700) {
         setHamburger(true);
         setVisible(true);
-      } else if (window.innerWidth <= 425) {
+      } else {
         setHamburger(false);
       }
     };
@@ -26,14 +27,15 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  });
   const isMobile = window.innerWidth <= 700;
 
   // const [anchorEl, setAnchorEl] = React.useState(null);
 
-  // const handleClick = (event) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
+  const handleClick = () => {
+    setVisible(!visible);
+    setHamburger(!hamburger);
+  };
 
   // const handleClose = () => {
   //   setAnchorEl(null);
@@ -53,10 +55,13 @@ export default function Navbar() {
           <div
             className="nav-items"
             style={{ display: hamburger && visible ? "flex" : "none" }}
+            onClick={handleClick}
           >
-            <a href="https://facebook.com/">Facebook</a>
-            <a href="https://twitter.com/">Twitter</a>
-            <a href="https://stackoverflow.com">Stack Overflow</a>
+            <Link to="/transplant">Transplant</Link>
+            <Link to="/homepage">Homepage</Link>
+            <Link to="/forum">Forum</Link>
+            <Link to="/iga">Living with IgA</Link>
+            <a href="https://kidney.org">National Kidney Foundation</a>
           </div>
         </div>
       ) : (

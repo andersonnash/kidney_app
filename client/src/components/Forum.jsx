@@ -96,14 +96,14 @@ export default function Forum(props) {
           onChange={handleChange}
         />
         <div className="submitButton">
-          <button class="formButton" type="submit">
+          <button className="formButton" type="submit">
             Submit
           </button>
         </div>
 
-        {getForumData.map((info) => {
+        {getForumData.map((info, index) => {
           return (
-            <div className="forumClass">
+            <div key={index} className="forumClass">
               <div className="forumInfo">
                 <h2>{info.fields.name}</h2>
                 <p>{info.fields.emailAddress}</p>
