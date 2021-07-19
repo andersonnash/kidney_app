@@ -43,7 +43,9 @@ export default function Navbar() {
 
   return (
     <nav>
-      <h2 className="headingLogo">In Forma</h2>
+      <Link to="/homepage">
+        <h2 className="headingLogo">In Forma</h2>
+      </Link>
       {isMobile ? (
         <div className="mobileClass">
           <img
