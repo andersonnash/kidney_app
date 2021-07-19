@@ -16,12 +16,12 @@ export default function Navbar() {
   useEffect(() => {
     const handleResize = (e) => {
       setWindowDimension(window.innerWidth);
-      if (windowDimension <= 700) {
-        setHamburger(true);
-        // setVisible(true);
-      } else {
-        setHamburger(false);
-      }
+      // if (windowDimension <= 700) {
+      //   setHamburger(true);
+      //   setVisible(true);
+      // } else {
+      //   setHamburger(false);
+      // }
     };
     window.addEventListener("resize", handleResize);
     return () => {
