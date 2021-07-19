@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <h2 className="headingLogo">Forza Salute</h2>
+      <h2 className="headingLogo">In Forma</h2>
       {isMobile ? (
         <div className="mobileClass">
           <img

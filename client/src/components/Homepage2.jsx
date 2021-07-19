@@ -25,81 +25,81 @@ export default function Homepage2() {
 
   return (
     <div className="cardContainer">
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="https://www.kidney.org/sites/default/files/styles/nephron_custom_scale_crop_300_225/public/transplant_friends.jpg"
-            title="Transplant"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Transplant
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              When you get a kidney transplant
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            <Link to="/Transplant"> Learn More</Link>
-          </Button>
-        </CardActions>
-      </Card>
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="https://www.codlearningtech.org/wp-content/uploads/2020/07/discussionboard-1.png"
-            title="Transplant"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Forum
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Share your story with the community
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          {/* <Button size="small" color="primary">
-            Share
-          </Button> */}
-          <Button size="small" color="primary">
-            <Link to="/Forum"> Share Your Story</Link>
-          </Button>
-        </CardActions>
-      </Card>
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="https://www.kidney.org/sites/default/files/styles/nephron_custom_scale_crop_300_225/public/things_to_consider.jpg"
-            title="Transplant"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Living with IgA
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              IgA nephropathy is a chronic kidney disease.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          {/* <Button size="small" color="primary">
+      <Link to="/Transplant">
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://www.kidney.org/sites/default/files/styles/nephron_custom_scale_crop_300_225/public/transplant_friends.jpg"
+              title="Transplant"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Transplant
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                When you get a kidney transplant
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Share
+            </Button>
+            <Button size="small" color="primary"></Button>
+          </CardActions>
+        </Card>
+      </Link>
+      <Link to="/Forum">
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://www.codlearningtech.org/wp-content/uploads/2020/07/discussionboard-1.png"
+              title="Transplant"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Forum
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Share your story with the community
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            {/* <Button size="small" color="primary">
             Share
           </Button> */}
-          <Button size="small" color="primary">
-            <Link to="/iga">Learn More</Link>
-          </Button>
-        </CardActions>
-      </Card>
+            <Button size="small" color="primary"></Button>
+          </CardActions>
+        </Card>
+      </Link>
+      <Link to="/iga">
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://www.kidney.org/sites/default/files/styles/nephron_custom_scale_crop_300_225/public/things_to_consider.jpg"
+              title="Transplant"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Living with IgA
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                IgA nephropathy is a chronic kidney disease.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            {/* <Button size="small" color="primary">
+            Share
+          </Button> */}
+            <Button size="small" color="primary"></Button>
+          </CardActions>
+        </Card>
+      </Link>
     </div>
   );
 }
