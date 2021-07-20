@@ -8,7 +8,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
-// import Intro from "./components/Intro";
 
 const useStyles = makeStyles({
   root: {
@@ -68,9 +67,6 @@ export default function Homepage2() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            {/* <Button size="small" color="primary">
-            Share
-          </Button> */}
             <Button size="small" color="primary"></Button>
           </CardActions>
         </Card>
@@ -93,9 +89,6 @@ export default function Homepage2() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            {/* <Button size="small" color="primary">
-            Share
-          </Button> */}
             <Button size="small" color="primary"></Button>
           </CardActions>
         </Card>

@@ -37,10 +37,6 @@ export default function Navbar() {
     setHamburger(!hamburger);
   };
 
-  // const handleClose = () => {
-  //   setAnchorEl(null);
-  // };
-
   return (
     <nav>
       <Link to="/">
@@ -57,7 +53,6 @@ export default function Navbar() {
           <div
             className="nav-items"
             style={{ display: hamburger && visible ? "flex" : "none" }}
-            // onClick={handleClick}
           >
             <Link to="/transplant">Transplant</Link>
             <Link to="/homepage">Homepage</Link>
@@ -89,35 +84,5 @@ export default function Navbar() {
         </div>
       )}
     </nav>
-
-    // <div className="navbar">
-    //   <Button
-    //     aria-controls="simple-menu"
-    //     aria-haspopup="true"
-    //     onClick={handleClick}
-    //   >
-    //     Open Menu
-    //   </Button>
-    //   <Menu
-    //     id="simple-menu"
-    //     anchorEl={anchorEl}
-    //     keepMounted
-    //     open={Boolean(anchorEl)}
-    //     onClose={handleClose}
-    //   >
-    //     <Link to="/">
-    //       <MenuItem onClick={handleClose}>Homepage</MenuItem>
-    //     </Link>
-    //     <Link to="/forum">
-    //       <MenuItem onClick={handleClose}>Forum</MenuItem>
-    //     </Link>
-    //     <Link to="/transplant">
-    //       <MenuItem onClick={handleClose}>Transplant</MenuItem>
-    //     </Link>
-    //     <Link to="/iga">
-    //       <MenuItem onClick={handleClose}>Living with IgA</MenuItem>
-    //     </Link>
-    //   </Menu>
-    // </div>
   );
 }
