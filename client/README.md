@@ -4,7 +4,7 @@
 
 ## Project Name
 
-The Kidney App - Still not sure
+In Forma
 
 ## Project Description
 
@@ -61,37 +61,37 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Day        | Deliverable                                        | Status     |
 | ---------- | -------------------------------------------------- | ---------- |
-| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 13    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| July 14    | Pseudocode / actual code                           | Incomplete |
-| July 15    | Initial Clickable Model                            | Incomplete |
-| July 16    | MVP                                                | Incomplete |
-| July 17    | Tailwind                                           | Incomplete |
-| July 18    | Media Queries                                      | Incomplete |
-| July 19    |                                                    | Incomplete |
+| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | complete |
+| July 13    | Project Approval                                   | complete |
+| July 13    | Core Application Structure (HTML, CSS, etc.)       | complete |
+| July 14    | Pseudocode / actual code                           | complete |
+| July 15    | Initial Clickable Model                            | complete |
+| July 16    | MVP                                                | complete |
+| July 17    | Material UI                                        | complete |
+| July 18    | Media Queries                                      | complete |
+| July 19    | CSS                                                | complete |
 | July 20    | Presentations                                      | Incomplete |
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 
-Time frames are also key in the development cycle. You have limited time to code all parts of your app. Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Airtbale           |    H     |      1hrs      |      hrs      |     hrs     |
-| Coding Components           |    H     |      3hrs      |      hrs      |     hrs     |
-| Clickable Images/Icons      |    H     |      3hrs      |      hrs      |     hrs     |
-| Functional Discussion Board |    H     |      3hrs      |      hrs      |     hrs     |
-| Functional Submit Button    |    H     |      3hrs      |      hrs      |     hrs     |
-| CSS                         |    H     |      3hrs      |      hrs      |     hrs     |
-| Advanced CSS                |    H     |      3hrs      |      hrs      |     hrs     |
-| Flexbox/Grid Styling        |    H     |      3hrs      |      hrs      |     hrs     |
-| Media Query                 |    H     |      3hrs      |      hrs      |     hrs     |
-| Adding External Links       |    H     |      3hrs      |      hrs      |     hrs     |
-| Using an External API       |    H     |      3hrs      |      hrs      |     hrs     |
-| Total                       |    H     |     31hrs      |      hrs      |     hrs     |
+| Creating Airtbale           |    H     |      1hrs      |      3hrs      |     hrs     |
+| Coding Components           |    H     |      3hrs      |      4hrs      |     hrs     |
+| Clickable Images/Icons      |    H     |      3hrs      |      3hrs      |     hrs     |
+| Functional Discussion Board |    H     |      3hrs      |      2hrs      |     hrs     |
+| Functional Submit Button    |    H     |      3hrs      |      2hrs      |     hrs     |
+| Material UI                 |    H     |      3hrs      |      3hrs      |     hrs     |
+| CSS                         |    H     |      3hrs      |      6hrs      |     hrs     |
+| Advanced CSS                |    H     |      3hrs      |      3hrs      |     hrs     |
+| Flexbox/Grid Styling        |    H     |      3hrs      |      3hrs      |     hrs     |
+| Media Query                 |    H     |      3hrs      |      4hrs      |     hrs     |
+| Adding External Links       |    H     |      3hrs      |      1hrs      |     hrs     |
+| Deployment.                 |    H     |      2hrs      |      2hrs      |     hrs     |
+
+| Total                       |    H     |     31hrs      |     35 hrs      |    35 hrs     |
 
 ## SWOT Analysis
 
