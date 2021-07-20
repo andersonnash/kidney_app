@@ -74,8 +74,9 @@ textarea {
   .forumClass {
     display: flex;
     width: fit-content;
+    height: 25%;
   }
   .forumInfo {
-    border: none;
+    /* border: none; */
   }
 }
