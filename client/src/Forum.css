@@ -67,4 +67,15 @@ textarea {
   .forumClass {
     border-style: none;
   }
+  button.formButton {
+    width: 50%;
+  }
+
+  .forumClass {
+    display: flex;
+    width: fit-content;
+  }
+  .forumInfo {
+    border: none;
+  }
 }
